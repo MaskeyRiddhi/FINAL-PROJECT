@@ -8,17 +8,68 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <div class="container">
+    <nav>
+        
         <h1>Riddhi Maskey</h1>
-        <nav>
-            <ul>
-                <li a href="#Home">Home</li>
-                <li a href="#Intro">Introduction</li>
-                <li a href="Education">Education</li>
-                <li a href="Hobbies">Hobbies</li>
-                <li a href="#Contact">Contact</li>
+       
+            <ul class="navigation">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Intro">Introduction</a></li>
+                <li><a href="Education">Education</a></li>
+                <li><a href="Hobbies">Hobbies</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
-    </div>
+   
+        <section class="contact" id="contact">
+            <h2>Get In Touch With Me</h2>
+            <div class="contact-form-container">
+              <div class="contact-form">
+                <form action="https://formspree.io/f/xyylngw" method="POST">
+                  <div class="form-control">
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="sender-name"
+                      placeholder="Enter Your Name"
+                      class="input-field"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="sender-email"
+                      placeholder="Enter Your Email"
+                      class="input-field"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label for="message">Message</label>
+                    <textarea
+                      id="message"
+                      cols="60"
+                      rows="10"
+                      placeholder="Enter Your Message"
+                      name="message"
+                      class="input-field"
+                      required
+                    ></textarea>
+                  </div>
+                  <input
+                    type="submit"
+                    value="Submit"
+                    id="submit-btn"
+                    class="submit-btn"
+                  />
+                </form>
+              </div>
+            </div>
+          </section>
 </body>
 </html>
