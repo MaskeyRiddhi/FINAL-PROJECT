@@ -35,12 +35,63 @@
           <img src="pic/background.jpg">
         </div>
         <div class="about-col-2">
-          <h1>About Me</h1>
+          <h1 class="sub-title">About Me</h1>
+          <p>I was born in Sindhupalchok-chautara, Nepal. Currently i am living at koteshwor, KTM,Nepal. I am entering my first year at the University of Wolverhampton where i am studying 
+            Bachelor's of Information Technology at the Herald College in Nepal.</p>
         </div>
       </div>
     </div>
   </div>
 
-
+  <!-- ---------------Contact-------- -->
+  <div id="contact">
+    <h2>Get In Touch With Me</h2>
+    <div class="contact-form-container">
+      <div class="contact-form">
+        <form action="https://formspree.io/f/xyylngw" method="POST">
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="sender-name"
+              placeholder="Enter Your Name"
+              class="input-field"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="sender-email"
+              placeholder="Enter Your Email"
+              class="input-field"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              cols="60"
+              rows="10"
+              placeholder="Enter Your Message"
+              name="message"
+              class="input-field"
+              required
+            ></textarea>
+          </div>
+          <input
+            type="submit"
+            value="Submit"
+            id="submit-btn"
+            class="submit-btn"
+          />
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
