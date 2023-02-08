@@ -6,23 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8addd4800a.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div id="header">
 <div class="container">
     <nav>
         <h1>Riddhi Maskey</h1>
-        <ul>
+        <ul id="sidemenu">
             <li><a href="#Home">Home</a></li>
                 <li><a href="#Intro">Introduction</a></li>
-                <li><a href="Education">Education</a></li>
-                <li><a href="Hobbies">Hobbies</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
         </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
     </nav>
     <div class="header-text">
-      <p></p>
+      <p> Student </p>
       <h1>Hi, I'm Riddhi <br> Maskey From Nepal</h1>
     </div>
 </div>
@@ -42,10 +44,100 @@
       </div>
     </div>
   </div>
-<!-- ----------Skills-----------> 
- <section class="skills" id="skills">
+<!-- ----------Education-----------> 
+ <div id="education">
+  <div class="container">
+    <h1 class="sub-title"> Education</h1>
+    <div class="education-list">
+      <div>
+        <i class="fa-sharp fa-solid fa-code"></i>
+        <h2>school level</h2>
+        <p>School - Pragya Englisg Secondary School<br>
+           Dates - From 2006 to 2019 <br>
+           Examination - SEE <br>
+           Result - 3.5 </p>
+      </div>
+      <div>
+        <i class="fa-sharp fa-solid fa-crop"></i>
+        <h2>+2 Level</h2>
+        <p> College - Bluebird College <br>
+            Dates - From 2019 to 2021 <br>
+            Examination - NEB <br>
+            Result - 3.39</p>
+
+      </div>
+      <div>
+        <i class="fa-brands fa-app-store"></i>
+        <h2>Bachelors level</h2>
+        <p> College - Herald College Kathmandu <br>
+            Dates - From 2022 to till now <br>
+            Examination - Bachelors degree </p>
+      </div>
+    </div>
+  </div>
+ </div>
+
+ <!-- ----------Hobbies----------- -->
+ <div id="hobbies">
+  <div class="container">
+    <h1 class="sub-title"> My Hobbies</h1>
+    <div class="hob-list">
+      <div class="hob">
+        <img src="pic/reading.jpg">
+      </div>
+      <div class="hob">
+        <img src="pic/singing.jpg">
+      </div>
+      <div class="hob">
+        <img src="pic/dancing.jpg">
+      </div>
+      <div class="hob">
+        <img src="pic/travell.jpg">
+      </div>
+      
+    </div>
+  </div>
+ </div>
   
- </section>
+<!-- ------------------contact------------ -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-sharp fa-solid fa-paper-plane"></i> kashismaskey@gmail.com</p>
+        <p><i class="fa-solid fa-square-phone"></i> 9843099333</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/kashismaskey.me"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/kashis-maskey-57716925a/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/MaskeyRiddhi?tab=repositories"><i class="fa-brands fa-github"></i></a>
+        </div>
+          <a href="pic/RIDDHI MASKEY.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form >
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright @ Riddhi Made with <i class="fa-solid fa-heart"></i></p>
+  </div>
+</div>
     
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+</script>
+
 </body>
 </html>
